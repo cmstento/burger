@@ -1,0 +1,12 @@
+<div>
+    <form method="post" action="/api/burgers">
+        <input type="text" name="burger_name" />
+        <input type="number" name="devoured" />
+        <input type="submit" value="Input your burger type"/>
+    </form> 
+    <ol>
+        {{#each burgers as |burger|}}
+           <li> {{burger.burger_name}}</li>
+        {{/each}}
+    </ol>
+</div>
